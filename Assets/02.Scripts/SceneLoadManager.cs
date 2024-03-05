@@ -11,7 +11,7 @@ public class SceneLoadManager : MonoBehaviour
 	[SerializeField] Slider prograssBar;
 	[SerializeField] TextMeshProUGUI prograssText;
 
-	private readonly string currentScene = "Title";
+	private readonly string currentScene = "0.Title";
 
 	private static SceneLoadManager instance;
 

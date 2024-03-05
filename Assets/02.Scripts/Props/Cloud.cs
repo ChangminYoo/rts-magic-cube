@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Cloud : MonoBehaviour
 {
-    float speed = 0f;
-    float resetZ = -2000;
-    Vector3 startPos = Vector3.zero;
-    float dist = 2100f;
-    void Start()
+    private float speed = 0f;
+    private float resetZ = -2000;
+    private Vector3 startPos = Vector3.zero;
+    private float dist = 2100f;
+
+	private void Start()
     {
         Init();
     }
@@ -20,7 +21,7 @@ public class Cloud : MonoBehaviour
         transform.localScale = new Vector3(Random.Range(1, 5f), 1f, Random.Range(1, 5f));
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
         transform.Translate(Vector3.forward * speed * Time.fixedDeltaTime, Space.World);
 

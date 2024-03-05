@@ -7,27 +7,22 @@ public class ItemDropper : MonoBehaviour
 {
     int weaponIndex = 0;
 
-    void Start()
+	private void Start()
     {
        
     }
 
-    void OnDestroy()
+	private void OnDestroy()
     {
 
     }
 
-    void PointUp(int point)
+    private void PointUp(int point)
     {
      
     }
 
-    void DropWeapon(bool bActive)
-    {
-
-    }
-
-    void EquipWeapon(Transform player)
+    private void DropWeapon(bool bActive)
     {
 
     }
