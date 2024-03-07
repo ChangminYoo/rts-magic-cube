@@ -12,25 +12,8 @@ public class SceneLoadManager : MonoBehaviour
 	[SerializeField] TextMeshProUGUI prograssText;
 
 	private readonly string currentScene = "0.Title";
-
-	private static SceneLoadManager instance;
-
-	public static SceneLoadManager Instance
-	{
-		get
-		{
-			if (instance == null)
-			{
-				var obj = FindObjectOfType<SceneLoadManager>();
-				if (obj != null)
-				{
-					instance = obj;
-				}
-			}
-			return instance;
-		}
-	}
-
+	public static SceneLoadManager Instance { get; private set; }
+	
 	private void Awake()
 	{
 		canvasGroup = transform.GetChild(0).GetComponent<CanvasGroup>();
@@ -41,7 +24,7 @@ public class SceneLoadManager : MonoBehaviour
 		}
 		else
 		{
-			instance = this;
+			Instance = this;
 		}
 
 		DontDestroyOnLoad(gameObject);
