@@ -7,5 +7,5 @@ public class CharacterData : ScriptableObject
 {
 	public int HP;
 	public float MoveSpeed;
-	public float Sight;
+	public float AttackSpeed;
 }

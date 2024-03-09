@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: PlayerData
   m_EditorClassIdentifier: 
   HP: 100
-  MoveSpeed: 3
-  Sight: 0
+  MoveSpeed: 200
+  AttackSpeed: 0
